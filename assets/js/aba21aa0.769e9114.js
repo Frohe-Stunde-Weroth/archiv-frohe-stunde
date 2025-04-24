@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarchiv_frohe_stunde=self.webpackChunkarchiv_frohe_stunde||[]).push([[5742],{7093:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
