@@ -110,7 +110,7 @@ const config: Config = {
           items: [
             {
               label: 'Archiv',
-              to: '/docs/intro',
+              to: '/docs/archiv/intro',
             },
           ],
         },
