@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkarchiv_frohe_stunde=self.webpackChunkarchiv_frohe_stunde||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/archiv-frohe-stunde/blog","blogTitle":"Blog","authorsListPath":"/archiv-frohe-stunde/blog/authors"}')}}]);
