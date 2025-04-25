@@ -80,18 +80,21 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
             type: 'docSidebar',
             sidebarId: 'archivSidebar',
             position: 'left',
             label: 'Archiv',
-          },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        },
+        {
+            href: 'https://www.frohe-stunde-weroth.de/bilder/',
+            label: 'Bilder',
+            position: 'left',
+        },
+        {
+            href: 'https://www.frohe-stunde-weroth.de/konzerte/',
+            label: 'Konzerte',
+            position: 'left',
+        },
         {
           href: 'https://www.frohe-stunde-weroth.de',
           label: 'Webseite',
