@@ -41,7 +41,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Frohe-Stunde-Weroth/archiv-frohe-stunde/blob/main/',
         },
         blog: {
           showReadingTime: true,
@@ -52,7 +52,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Frohe-Stunde-Weroth/archiv-frohe-stunde/blob/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -65,14 +65,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    'plugin-image-zoom'
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo Frohe Stunde Weroth',
+        src: 'img/logo_frohe_stunde_weroth_black.png',
       },
       items: [
         {
@@ -81,10 +85,16 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {
+            type: 'docSidebar',
+            sidebarId: 'archivSidebar',
+            position: 'left',
+            label: 'Archiv',
+          },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://www.frohe-stunde-weroth.de',
+          label: 'Webseite',
           position: 'right',
         },
       ],
@@ -93,51 +103,64 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Seiten',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Archiv',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Soziale Medien',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/frohestundeweroth',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+                label: 'YouTube',
+                href: 'https://www.youtube.com/results?search_query=Frohe+Stunde+Weroth',
+            }
           ],
         },
         {
-          title: 'More',
+          title: 'Rechtliches',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Impressum',
+              href: 'https://www.frohe-stunde-weroth.de/impressum/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Datenschutz',
+              href: 'https://www.frohe-stunde-weroth.de/datenschutz/',
             },
+            {
+                label: 'Kontakt',
+                href: 'https://www.frohe-stunde-weroth.de/kontakt/',
+              },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Männerchor Frohe Stunde Weroth. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    imageZoom: {
+        // CSS selector to apply the plugin to, defaults to '.markdown img'
+        selector: '.markdown img',
+        // Optional medium-zoom options
+        // see: https://www.npmjs.com/package/medium-zoom#options
+        options: {
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+          container: '#zoom-container',
+          template: '#zoom-template',
+        },
+      },
   } satisfies Preset.ThemeConfig,
 };
 
