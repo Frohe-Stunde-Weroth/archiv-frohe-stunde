@@ -23,6 +23,8 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-grid-gallery": "^1.0.1",
+    "react-image-grid-gallery": "^3.1.2",
     "react-music-player": "^1.0.3",
     "react-player": "^2.16.0"
   },
