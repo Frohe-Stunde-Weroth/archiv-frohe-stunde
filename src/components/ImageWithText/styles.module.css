@@ -1,0 +1,67 @@
+.container {
+    display: block;
+    margin-bottom: 20px; /* Optional: Abstand zur nächsten Komponente */
+  }
+  
+  .imageContainer {
+    margin-left: 20px; /* Optional: Abstand zwischen Bild und Text, falls Text daneben fließen soll */
+    margin-bottom: 10px; /* Abstand zwischen Bild und Text */
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden; /* Verhindert, dass der Schatten über die Ecken hinausgeht */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatteneffekt */
+    width: 30%;
+    float: right;
+  }
+  
+  .image {
+    display: block; /* Verhindert zusätzlichen Leerraum unter dem Bild */
+    max-width: 100%; /* Stellt sicher, dass das Bild nicht breiter als sein Container ist */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image:hover {
+    transform: scale(1.03); /* Optional: Leichter Zoom-Effekt beim Hovern */
+  }
+  
+  .textContainer {
+    flex-grow: 1; /* Lässt den Textbereich den verbleibenden Platz einnehmen */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .zoomedImage {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .closeButton:hover {
+    opacity: 1;
+  }

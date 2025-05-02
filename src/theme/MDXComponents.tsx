@@ -6,10 +6,12 @@
    */
   import MDXComponents from '@theme-original/MDXComponents'
   import ImageGridGallery from '@site/src/components/ImageGridGallery';
+  import ImageWithText from '@site/src/components/ImageWithText';
 
   export default {
     // Reusing the default mapping
     ...MDXComponents,
     // Adding the ImageOnClick tag following the doc's process ;)
     ImageGridGallery,
+    ImageWithText,
   };

@@ -73,7 +73,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: '',
+      title: ' Frohe Stunde Weroth',
       logo: {
         alt: 'Logo Frohe Stunde Weroth',
         src: 'img/logo_frohe_stunde_weroth_black.png',
