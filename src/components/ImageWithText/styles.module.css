@@ -11,7 +11,7 @@
     border-radius: 4px;
     overflow: hidden; /* Verhindert, dass der Schatten über die Ecken hinausgeht */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatteneffekt */
-    width: 30%;
+    width: 20%;
     float: right;
   }
   

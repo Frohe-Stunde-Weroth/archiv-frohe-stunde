@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Frohe Stunde Weroth',
   tagline: 'Archiv aus 125 Jahren Männerchor',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Icon_Männerchor Frohe Stunde Weroth schwarz.png',
 
   // Set the production url of your site here
   url: 'https://github.com',
