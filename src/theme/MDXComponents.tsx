@@ -7,6 +7,7 @@
   import MDXComponents from '@theme-original/MDXComponents'
   import ImageGridGallery from '@site/src/components/ImageGridGallery';
   import ImageWithText from '@site/src/components/ImageWithText';
+  import AudioList from '@site/src/components/AudioList';
 
   export default {
     // Reusing the default mapping
@@ -14,4 +15,5 @@
     // Adding the ImageOnClick tag following the doc's process ;)
     ImageGridGallery,
     ImageWithText,
+    AudioList,
   };

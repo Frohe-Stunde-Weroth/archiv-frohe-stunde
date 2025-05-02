@@ -1,0 +1,69 @@
+.audioList {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .trackList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .trackList li {
+    padding: 8px 0;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .trackList li:hover {
+    color: #007bff;
+  }
+  
+  .trackList .active {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .player {
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .player h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .player audio {
+    width: 100%; /* Sorgt dafür, dass der Audio-Player die volle Breite einnimmt */
+    margin-bottom: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .controls button:hover {
+    color: #007bff;
+  }
+  
+  .controls svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
