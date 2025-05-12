@@ -5,48 +5,49 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
+  img: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Internationale Wettbewerbe',
+    img: 'img/frohe_stunde_international.jpg',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Wir waren Teilnehmer an mehreren internationalen Chorwettbewerben in Tschechien, Spanien, Italien, Österreich und Deutschland.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Eigene Konzerte',
+    img: 'img/frohe_stunde_konzerte.jpg',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Unter dem Motto "Die FROHE STUNDE lädt ein" veranstalten wir alle 2 Jahre ein eigenes Konzert mit namhaften Gästen im Bürgerhaus Weroth.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Chronik',
+    img: 'img/frohe_stunde_chronik.jpg',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Auch die Vergangenheit ist uns wichtig. Daher pflegen wir ein umfangreiches Archiv und haben eine digitale Chronik aufgebaut, um das vergangene nicht zu vergessen.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, img, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={img} alt="Italian Trulli" style={{'border-radius': '16px', 'margin-top': '24px', 'margin-bottom': '24px', 'box-shadow': '0 0 12px'}}/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
