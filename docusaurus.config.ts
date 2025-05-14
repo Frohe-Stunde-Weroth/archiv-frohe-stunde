@@ -72,8 +72,8 @@ const config: Config = {
         hashed: true,
         highlightSearchTermsOnTargetPage: true,
         searchBarShortcutHint: false,
-        searchBarPosition: "left",
-        language: "de",
+        searchBarPosition: "auto",
+        language: ["de", "en"],
       },
     ],
   ],
@@ -122,8 +122,16 @@ const config: Config = {
           title: "Seiten",
           items: [
             {
-              label: "Archiv",
-              to: "/docs/archiv/intro",
+              label: "2020 - heute",
+              to: "/docs/category/2020-heute",
+            },
+            {
+              label: "2010 - 2019",
+              to: "/docs/category/2010-2019",
+            },
+            {
+              label: "2000 - 2009",
+              to: "/docs/category/2000-2009",
             },
           ],
         },
