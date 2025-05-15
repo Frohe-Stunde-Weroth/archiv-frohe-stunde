@@ -119,7 +119,7 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Seiten",
+          title: "Chronik",
           items: [
             {
               label: "2020 - heute",
