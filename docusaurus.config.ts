@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Frohe Stunde Weroth",
-  tagline: "Archiv aus 125 Jahren Männerchor",
+  tagline: "Chronik aus 125 Jahren Männerchor",
   favicon: "img/Icon_Männerchor Frohe Stunde Weroth schwarz.png",
 
   // Set the production url of your site here
@@ -92,7 +92,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "archivSidebar",
           position: "left",
-          label: "Archiv",
+          label: "Chronik",
         },
         {
           href: "https://www.frohe-stunde-weroth.de/bilder/",

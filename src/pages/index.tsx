@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Archiv aus 125 Jahre Männerchor">
+      description="Chronik aus 125 Jahre Männerchor">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

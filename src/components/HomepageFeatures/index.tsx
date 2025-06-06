@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Chronik',
+    title: 'Historie',
     img: 'img/frohe_stunde_chronik.jpg',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
